@@ -1,0 +1,112 @@
+\documentclass[1.5,a4,12pt]{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath} 
+\usepackage{amsfonts} 
+\usepackage{appendix}  
+%\usepackage[dvipdfm]{hyperref}
+\usepackage[top=3cm, bottom=3cm, left=2.7cm, right=2.8cm]{geometry}
+\usepackage{lscape}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{calligra}
+%\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\setcounter{MaxMatrixCols}{10}
+\setlength\leftmarginii{3.1em}
+
+
+\begin{document}
+	\title{{\huge Template Tex-File} }}
+	\date{\today}
+	\author{Ingrid Haegele} \\
+	\vspace{1cm}
+	\maketitle
+\baselineskip20pt
+\thispagestyle{empty}
+\addtocounter{page}{-1}
+\newpage
+
+\section{This is a template}
+
+This template is meant as a resource for you to type up your problem set solutions. I added a couple of useful latex commands that hopefully serve as a good introduction into how to use latex. \\
+
+\noindent  There are multiple (free) programs you can download in order to write a latex file. I use TeXstudio. Another great program is Overleaf, which stores your texfiles online and allows you to collaborate with multiple people. It also offers command suggestions when writing, which can be particularly helpful at the beginning. Some people prefer LyX, which offers an easier writing environment. In oder to use this template, I recommend opening both the tex.file (in the Latex or LyX editor) and comparing the commands with the pdf version. \\
+
+\noindent You start the latex file by loading in packages (see above). If you would like to use additional functions, such as math modes, you will need to add the corresponding packages. \\
+
+\noindent If you want to comment out a line, use the $\%$.  \\
+
+% This line is commented out due to the %. 
+
+
+\section{Section with Numbering}
+\subsection*{Subsection without Numbering}
+There are different ways for how to write section headers, either including numbers or not. 
+
+\section{Mathematical Expression}
+
+See below for how to enumerate using $\textit{enumerate}$ or simply list items with $\textit{itemize}$.  \\
+
+\noindent Following mathematical expression are covered in the rest of this template:
+\begin{enumerate}
+\item Matrix
+\item Inverse
+\item Distribution
+\item Underscores and bold letters
+\item Fractions
+\item Equations
+\item Derivatives
+\item Conditional expectations 
+\item Greek letters \\
+\end{enumerate}
+
+\subsection*{Matrix}
+This is how you write a matrix in Latex:
+
+$$ 
+ \Sigma  = 
+\begin{bmatrix}
+\Sigma_{11} & \Sigma_{12} \\ 
+\Sigma_{21} & \Sigma_{22}
+\end{bmatrix}
+$$ \\
+
+\subsection*{Inverse}	
+This is how you write an inverse:
+
+$$ \Sigma^{-1}  $$ \\
+
+\subsection*{Distribution}
+This is how you write a distribution: $\textbf{Z}$ $\sim N \Big( \mu,  \Sigma  \Big)$ \\
+
+\subsection*{Bold letters}
+This is how you write underscores / bold letters:
+$	f_{\mathbf{Y}}(\mathbf{y}) $ \\
+
+\subsection*{Fractions}
+This is how you write fractions: $\frac{1}{2}$ \\
+
+\subsection*{Equations}
+This is how you write an equation over multiple lines using $\textit{align}$:
+
+\begin{aligned}
+	8 
+	&=  5 + 3 \\
+	&=  10 -2 \\
+	& = 8 
+\end{aligned} 
+
+\subsection*{Derivatives}
+If you would like to use mathematical expressions without the align environment, make sure to use the dollar signs around the expression. Here is an example using $\textit{partial}$ to type a derivative:
+$\frac{{\partial x}}{{\partial y}}$.\\
+If you would like to center the expression, use double dollar signs:
+$$\frac{{\partial x}}{{\partial x}}$$
+
+
+\subsection*{Conditional Expectations}
+This is how you write conditional expectations: $E[Y\vert X]$ 
+
+\subsection*{Greek letters}
+You probably will use $\alpha$ and $\beta$ a lot. You can also use underscores here, for example if you are looking for $\beta_{0}$.  If you are looking for an estimator or fitted value, here is the hat command: $\hat{\theta}$. 
+
+
+\end{document}
